@@ -23,6 +23,7 @@ function Blogs() {
                 Read Blogs &nbsp;&nbsp; <span className="mt-0.5"> <FaArrowRight className="font-light"/> </span>
                 </Link>
             </div>
+            <div className="mx-2 mt-4 h-0.5 rounded-full bg-gray-300"></div>
         </div>
     )
 }
