@@ -8,9 +8,9 @@ function index() {
         <>
             <div>
                 <div className="myAbout p-7 bg-blue-100 rounded">
-                    <h3 className="text-3xl mb-5">Hi, I'm Suraj.</h3>
+                    <h3 className="text-3xl mb-5">Hi&rsquo; I'm Suraj.</h3>
                     <p className="font-light text-xl">
-                        I'm a web developer from Southampton, UK. Currently lead developer at a local agency, Fhoke. In my spare time I enjoy DIY, gaming and building my own projects. My preferred tools are PHP, Laravel and Vue.js.
+                        I&apos;m a web developer from Southampton&rsquo; UK. Currently lead developer at a local agency&rsquo; Fhoke. In my spare time I enjoy DIY&rsquo; gaming and building my own projects. My preferred tools are PHP&rsquo; Laravel and Vue.js.
                     </p>
                     <h2 className="mt-5 text-2xl underline font-light">
                         Connect Me
