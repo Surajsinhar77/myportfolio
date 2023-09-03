@@ -25,7 +25,7 @@ function projectCard() {
           </div>
 
           <div className="productImage w-full">
-            <Image src="/Images/peas1.jpeg" width="400" height="0" className="h-48" />
+            <Image src="/Images/peas1.jpeg" width="400" height="0" className="h-48" alt="project image" />
           </div>
 
           <div className="info">

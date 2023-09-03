@@ -1,5 +1,5 @@
 import Navbar from '../components/navbar';
-import Image from 'next/image';
+// import Image from 'next/image';
 import ProjectCard from './projectCard'
 import Footer from '../components/Footer';
 

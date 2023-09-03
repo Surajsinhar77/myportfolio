@@ -5,7 +5,7 @@ function Blogs(){
     return (
         <div className="mt-5">
             <div>
-                <h2 className="text-2xl"> <Link href="#"> Converting a Laravel Inertia App from Mix to Vite </Link> </h2>
+                <h2 className="text-2xl"> <Link href="/"> Converting a Laravel Inertia App from Mix to Vite </Link> </h2>
             </div>
             <div className="tags mt-5">
                 <Link href="/" className="px-7 py-2 text-red-500 rounded border-2 border-red-500">Next.js</Link>
