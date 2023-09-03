@@ -16,9 +16,9 @@ function navbar() {
                 </div>
                 <div className="navbar flex flex-col justify-between ml-9">
                     <div className="PersonName">
-                        <h3 className="text-3xl uppercase font-bold">Suraj Kumar</h3>
+                        <h3 className="text-3xl uppercase font-bold"> <span className="pb-2 border-b-4 border-blue-300">Suraj Kumar</span></h3>
                     </div>
-                    <div className="navLink text-xl uppercase tracking-wide font-medium">
+                    <div className="navLink text-xl uppercase tracking-wider font-medium">
                         <ul className="flex">
                             <Link className="mr-5  hover:text-blue-400" href='#'>Work </Link>
                             <Link className="mr-5  hover:text-blue-400" href='#'>Project </Link>
