@@ -15,7 +15,7 @@ function index() {
                     <h2 className="mt-5 text-2xl underline font-light">
                         Connect Me
                     </h2>
-                    <div className="SocalLinks flex mt-5">
+                    {/* <div className="SocalLinks flex mt-5">
                         <Link  href="#" className="mr-5 my-3 bg-white border border-gray-300 bottom-1 py-2 px-10 rounded-lg">  <FaLinkedin className="text-blue-700 text-3xl"/>  </Link>
 
                         <Link  href="#" className="mr-5 my-3 bg-white border border-gray-300 bottom-1 py-2 px-10 rounded-lg">  <FaGithub className="text-gray-700 text-3xl"/>  </Link>
@@ -23,13 +23,13 @@ function index() {
                         <Link  href="#" className="mr-5 my-3 bg-white border border-gray-300 bottom-1 py-2 px-10 rounded-lg">  <FaDiscord className="text-blue-700 text-3xl"/>  </Link>
 
                         <Link  href="#" className="mr-5 my-3 bg-white border border-gray-300 bottom-1 py-2 px-10 rounded-lg">  <FaCode className="text-gray-800 text-3xl"/>  </Link>
-                    </div>
+                    </div> */}
                     <div className="codingPlateformLink">
 
                     </div>
                 </div>
 
-                <div className="Container mt-5 w-full flex justify-between">
+                <div className="ContainerForHomePage mt-5 w-full flex justify-between">
                     <div className="latestBlog w-6/12 pr-3">
                         <h3 className="text-2xl">Latest Blog</h3>
 

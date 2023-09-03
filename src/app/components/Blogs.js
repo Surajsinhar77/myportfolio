@@ -1,7 +1,7 @@
 import Link from "next/link"
 import {FaArrowRight} from "react-icons/fa";
 
-function Blogs() {
+function Blogs(){
     return (
         <div className="mt-5">
             <div>
@@ -15,7 +15,7 @@ function Blogs() {
             </div>
             <div className="contentPreview mt-4">
                 <p>
-                I recently converted my Inertia app from Laravel Mix to using Vite. In this post I'll talk about how it went, as well as some of the gotchas.
+                    I recently converted my Inertia app from Laravel Mix to using Vite. In this post I'll talk about how it went, as well as some of the gotchas.
                 </p>
             </div>
             <div className="BlogBtn mt-5 text-blue-400 font-light">

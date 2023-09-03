@@ -19,7 +19,7 @@ function Projects() {
                     </div>
                 </div>
             </div>
-            <div className="mx-2 mt-4 h-0.5 rounded-full bg-gray-300"></div>
+            <div className="mx-2 mt-8 h-0.5 rounded-full bg-gray-300"></div>
         </>
     )
 }
