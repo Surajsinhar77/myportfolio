@@ -1,7 +1,7 @@
 import Navbar from '../components/navbar';
 import Image from 'next/image';
 import ProjectCard from './projectCard'
-import Footer from '../components/footer';
+import Footer from '../components/Footer';
 
 function page() {
     return (

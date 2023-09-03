@@ -1,6 +1,6 @@
 import Navbar from "../components/navbar"
 import Blogs from "../components/Blogs"
-import Footer from "../components/footer"
+import Footer from "../components/Footer"
 
 // Blogs page
 
