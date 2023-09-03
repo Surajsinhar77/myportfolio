@@ -14,7 +14,7 @@ export default function blog() {
                             <div className="">
                                 <h2 className="uppercase text-lg font-medium text-gray-500">Search</h2>
                                 <div className="mt-5">
-                                    <input placeholder="Search" className="hover:shadow-inner focus:border-gray-400 pl-5 h-12 w-full border border-gray-500 rounded"></input>
+                                    <input placeholder="Search" className="focus:outline-none focus:outline-blue-600 focus:border-none hover:shadow-inner focus:border-gray-400 pl-5 h-12 w-full border border-gray-500 rounded"></input>
                                 </div>
                             </div>
                             <div className="mt-9">

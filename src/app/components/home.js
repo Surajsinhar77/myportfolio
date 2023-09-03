@@ -1,5 +1,5 @@
 import { FaLinkedin, FaGithub, FaDiscord , FaFacebook , FaCode} from "react-icons/fa";
-// import Link from 'next/link';
+import Link from 'next/link';
 import Projects from "./Projects";
 import Blogs from "./Blogs";
 
