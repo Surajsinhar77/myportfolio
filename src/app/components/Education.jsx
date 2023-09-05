@@ -4,7 +4,7 @@ function Education() {
     return (
         <>
             <div>
-                Ed.....
+                Education for you 
             </div>
         </>
     )
