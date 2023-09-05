@@ -20,11 +20,11 @@ function navbar() {
                     </div>
                     <div className="navLink text-xl uppercase tracking-wider font-medium">
                         <ul className="flex">
-                            <Link className="mr-5  hover:text-blue-400" href='/about'>About </Link>
+                            <Link className="mr-5  hover:text-blue-400  active: focus:text-gray-400  focus:ring-violet-300" href='/about'>About </Link>
                             <Link className="mr-5  hover:text-blue-400" href='/'>Work </Link>
                             <Link className="mr-5  hover:text-blue-400" href='/projects'>Project </Link>
                             <Link className="mr-5  hover:text-blue-400" href='/blogs'>Blog </Link>
-                            <Link className="mr-5 hover:text-blue-400" href='/contact'>Contact </Link>
+                            <Link className="mr-5  hover:text-blue-400" href='/contact'>Contact </Link>
                         </ul>
                     </div>
                 </div>
