@@ -17,21 +17,17 @@ function about() {
         1:dynamic(()=>import('../components/Education')),
         2:dynamic(()=>import('../components/Exprience')),
         3:dynamic(()=>import('../components/Skill')),
+        4:dynamic(()=>import('../components/Achievements')),
+        5:dynamic(()=>import('../components/ResumeViewer')),
 
     }
     const SubRouter = subRouterComponents[switching] ||null;
-
-    // const SwitchingData =(event)=>{
-    //     console.log("which data is here :",data);
-    //     console.log(event.target.value);
-    //     switching = data;
-    // }
 
     return (
         <>
         <div className="w-9/12 m-auto">
             <Navbar/>
-            <div className="mainAboutContainer">
+            <div className="mainAboutContainer ">
                 <div className="aboutMeInfo">
                     <h3 className='text-3xl'>About Me </h3>
                     <h5 className='text-lg mt-5'>Welcome to my portfolio!</h5>
@@ -40,7 +36,7 @@ function about() {
                     </p>
                 </div>
 
-                <div className="AboutInfo flex mt-5">
+                <div className="AboutInfo flex mt-5 border">
                     <div className="menubar w-1/5">
                         <div onClick={()=>setSwitchingData(1)} className="hover:text-gray-300 cursor-pointer educationOption flex border h-6 items-center p-7">
                             <FaGraduationCap className='text-lg mr-4'/>
@@ -64,8 +60,7 @@ function about() {
                         </div>
                     </div>
 
-
-                    <div className="OptionContainer w-4/5 border p-5">
+                    <div className="OptionContainer w-4/5 border p-4">
                         {/* <h1>Eduction</h1> */}
                         <div className="content">
                             {SubRouter  && <SubRouter/>}
