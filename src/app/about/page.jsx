@@ -39,23 +39,23 @@ function about() {
                 <div className="AboutInfo flex">
                     <div className="menubar w-1/5">
                         <div onClick={()=>setSwitchingData(1)} className="hover:text-gray-300 cursor-pointer educationOption flex border h-6 items-center p-5">
-                            {/* <FaBookOpen className='mr-4'/> */}
+                            <FaBookOpen className='mr-4'/>
                             <span >Education</span>
                         </div>
                         <div onClick={()=>setSwitchingData(2)} className="hover:text-gray-300 cursor-pointer educationOption flex border h-6 items-center p-5">
-                            {/* <FaBookOpen className='mr-4'/> */}
+                            <FaBookOpen className='mr-4'/>
                             <span >Expreience</span>
                         </div>
                         <div  className="cursor-pointer educationOption flex border h-6 items-center p-5">
-                            {/* <FaBookOpen className='mr-4'/> */}
+                            <FaBookOpen className='mr-4'/>
                             <span>Skills</span>
                         </div>
                         <div  className="cursor-pointer educationOption flex border h-6 items-center p-5">
-                            {/* <FaBookOpen className='mr-4'/> */}
+                            <FaBookOpen className='mr-4'/>
                             <span>Achievements</span>
                         </div>
                         <div  className="cursor-pointer educationOption flex border h-6 items-center p-5">
-                            {/* <FaBookOpen className='mr-4'/> */}
+                            <FaBookOpen className='mr-4'/>
                             <span>Resume</span>
                         </div>
                     </div>
