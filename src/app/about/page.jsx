@@ -4,7 +4,6 @@ import Footer from '../components/Footer';
 import {FaBookOpen,FaGraduationCap,FaRegNewspaper} from "react-icons/fa6";
 import {FaSuitcase,FaGears} from 'react-icons/fa6';
 import {GiAchievement} from 'react-icons/gi';
-// import Link from 'next/link'
 
 import dynamic from 'next/dynamic';
 import React, { useState } from 'react';
@@ -66,6 +65,11 @@ function about() {
                             {SubRouter  && <SubRouter/>}
                         </div>
                     </div>
+
+
+                    <div className="Featureproject">
+                        
+                    </div>
                 </div>
             </div>
             <Footer/>
@@ -74,4 +78,4 @@ function about() {
     )
 }
 
-export default about
+export default about;

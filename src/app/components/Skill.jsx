@@ -179,5 +179,4 @@ function Skill() {
         </>
     )
 }
-// https://icons8.com/icon/TUk7vxvtu6hX/chatgpt
 export default Skill
