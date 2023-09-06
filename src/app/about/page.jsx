@@ -4,10 +4,13 @@ import Footer from '../components/Footer';
 import {FaBookOpen,FaGraduationCap,FaRegNewspaper} from "react-icons/fa6";
 import {FaSuitcase,FaGears} from 'react-icons/fa6';
 import {GiAchievement} from 'react-icons/gi';
-
+import ProjectCard from '../projects/projectCard';
 import dynamic from 'next/dynamic';
 import React, { useState } from 'react';
-
+import {GrContact} from 'react-icons/gr';
+import {BiMailSend} from 'react-icons/bi';
+import {FaLinkedinIn} from 'react-icons/fa6';
+import {CgWebsite} from 'react-icons/cg';
 
 
 function about() {
@@ -18,7 +21,6 @@ function about() {
         3:dynamic(()=>import('../components/Skill')),
         4:dynamic(()=>import('../components/Achievements')),
         5:dynamic(()=>import('../components/ResumeViewer')),
-
     }
     const SubRouter = subRouterComponents[switching] ||null;
 
@@ -28,14 +30,14 @@ function about() {
             <Navbar/>
             <div className="mainAboutContainer ">
                 <div className="aboutMeInfo">
-                    <h3 className='text-3xl'>About Me </h3>
-                    <h5 className='text-lg mt-5'>Welcome to my portfolio!</h5>
-                    <p className='text-md mt-3'>
+                    <h1 className='mb-3 text-4xl text-center uppercase'>About me </h1>
+                    <h5 className='text-xl mt-5 font-normal text-center'>Welcome to my portfolio!</h5>
+                    <p className='text-lg mt-3 font-normal uppercase text-center'>
                         In Short: I'm a passionate and experienced developer with a deep love for all tech things.
                     </p>
                 </div>
 
-                <div className="AboutInfo flex mt-5 border">
+                <div className="AboutInfo flex mt-7 border">
                     <div className="menubar w-1/5">
                         <div onClick={()=>setSwitchingData(1)} className="hover:text-gray-300 cursor-pointer educationOption flex border h-6 items-center p-7">
                             <FaGraduationCap className='text-lg mr-4'/>
@@ -65,10 +67,35 @@ function about() {
                             {SubRouter  && <SubRouter/>}
                         </div>
                     </div>
+                </div>
 
+                <div className="Featureproject mt-40">
+                    <h1 className='mb-20 text-4xl text-center'>Feature Project </h1>
+                    <div className="mainImage grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 m-auto">
+                        <ProjectCard/>
+                        <ProjectCard/>
+                        <ProjectCard/>
+                        <ProjectCard/>
+                    </div>
+                </div>
 
-                    <div className="Featureproject">
-                        
+                <div className="ContactOption mt-40">
+                    <h1 className='mb-20 text-4xl text-center'>Say Hello <br /> Contact Me </h1>
+                    <div className="contactFromAbout">
+                        <h3 className='mb-3 text-xl flex items-center font-medium'>< GrContact className='text-blue-600'/> &nbsp; Get in touch</h3>
+                        <p className='text-lg font-light'>
+                            Sweet, that's it from my side! Now it's your turn to say hi. <br />
+                            I'm available for freelance projects. Let's work together to create something <br /> worth sharing.
+                        </p>
+
+                        <div className="btn flex mt-6 mb-28">
+                            <button className='flex px-2 py-2 border items-center rounded-lg mr-2 text-red-700 border-red-700 hover:bg-red-700 hover:text-white'>
+                                <BiMailSend className='mr-1'/> Mail </button>
+                            <button className='flex px-2 py-2 border items-center rounded-lg mr-2 text-blue-600 border-blue-600  hover:bg-blue-600 hover:text-white'>
+                                <FaLinkedinIn className='mr-1'/> LinkedIn</button>
+                            <button className='flex px-2 py-2 border items-center rounded-lg mr-2 text-green-500 border-green-500  hover:bg-green-500 hover:text-white'>
+                                <CgWebsite className='mr-1'/> Contact Page</button>
+                        </div>
                     </div>
                 </div>
             </div>
