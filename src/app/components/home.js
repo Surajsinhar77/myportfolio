@@ -59,7 +59,7 @@ function index() {
                     <div className="latestProject w-6/12 pl-3">
                         <h3 className="text-2xl">Latest Project</h3>
                         <div className="mx-2 mt-4 h-0.5 rounded-full bg-gray-300"></div>
-                        <div className="mx-2 mb-5">
+                        <div className="mx-2 p-5">
                         {
                             ProjectList.map((project,index)=>{
                                     return <ProjectCard project={project} index={index}/>
