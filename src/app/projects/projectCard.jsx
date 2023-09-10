@@ -3,10 +3,11 @@ import {SiV} from 'react-icons/si';
 import Image from "next/image"
 import Link from "next/link";
 
-function projectCard() {
+function projectCard({project,index}) {
+  
   return (
       <>
-        <div className="cardBody w-80 border m-auto bg-white shadow-md rounded-lg overflow-hidden">
+        <div className="cardBody w-80 border m-auto bg-white shadow-md rounded-lg overflow-hidden mb-5">
           <div className="upperBody flex border items-center justify-between p-2">
             <div className="main part flex items-center">
                 <div className="profile mr-2">
@@ -17,8 +18,8 @@ function projectCard() {
                 </div>
 
                 <div className="nameAndDate">
-                  <h4 className="textsm">VegMarker</h4>
-                  <p className="text-xs">July - 1 - 2023 To Aug - 31 - 2023 </p>
+                  <h4 className="textsm">{project.name}</h4>
+                  <p className="text-xs">{`${project.date[1]} - ${project.date[0]} - ${project.date[2]} To Aug - 31 - 2023 `}</p>
                 </div>
             </div>
 
@@ -29,7 +30,7 @@ function projectCard() {
           </div>
 
           <div className="productImage w-full hover:bg-gray-200 hover:liner">
-            <Link href="/">
+            <Link href="/projects/[slug]/" as={`/projects/${index}/`}>
               <Image src="/Images/homePage.png" width="400" height="0" className="h-48" alt="project image" />
             </Link>
           </div>
@@ -38,15 +39,13 @@ function projectCard() {
             <p className="p-3 text-xs">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed saepe nihil sunt non odio tempora rem.</p>
           </div>
 
-          <h2>Technology Used To build</h2>
-          <div className="useTech p-3">
-            <button className="py-1 px-1 text-sm border rounded-md border-blue-400 mr-3 mb-3 text-blue-400">Next.js</button>
-            <button className="py-1 px-1 text-sm border rounded-md border-blue-400 mr-3 mb-3 text-blue-400">MongoDb</button>
-            <button className="py-1 px-1 text-sm border rounded-md border-blue-400 mr-3 mb-3 text-blue-400"> Intership</button>
-            <button className="py-1 px-1 text-sm border rounded-md border-blue-400 mr-3 mb-3 text-blue-400"> SDE</button>
-            <button className="py-1 px-1 text-sm border rounded-md border-blue-400 mr-3 mb-3 text-blue-400"> Developer</button>
-            <button className="py-1 px-1 text-sm border rounded-md border-blue-400 mr-3 mb-3 text-blue-400">Node.js</button>
-            
+          <h2 className="text-center">{project.name}</h2>
+          <div className="useTech p-3 border-t-2 mt-5">
+            {
+              project.tags.map((tags)=>{
+                return <button className="py-1 px-1 text-sm border rounded-md border-blue-400 mr-3 mb-3 text-blue-400">{tags}</button>
+              })
+            }
           </div>
         </div>
       </>

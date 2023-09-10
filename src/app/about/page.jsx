@@ -11,6 +11,7 @@ import {GrContact} from 'react-icons/gr';
 import {BiMailSend} from 'react-icons/bi';
 import {FaLinkedinIn} from 'react-icons/fa6';
 import {CgWebsite} from 'react-icons/cg';
+import Link from 'next/link';
 
 
 function about() {
@@ -24,6 +25,21 @@ function about() {
     }
     const SubRouter = subRouterComponents[switching] ||null;
 
+
+    const ProjectList =[
+        {
+            name : "e-Commarce VegMarket Store",
+            date : [2,"Sep",2023],
+            tags : ['next.js', 'react.js', 'node.js','express.js', 'mongodb']
+        },
+
+        {
+            name : "Hostel Management System",
+            date : [10,"Sep",2022],
+            tags : ['Bootstrap', 'HTML', 'Javascript','Flask', 'Python', 'MySql']
+        },
+    ]
+    
     return (
         <>
         <div className="w-9/12 m-auto">
@@ -72,10 +88,12 @@ function about() {
                 <div className="Featureproject mt-40">
                     <h1 className='mb-20 text-4xl text-center'>Feature Project </h1>
                     <div className="mainImage grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 m-auto">
-                        <ProjectCard/>
-                        <ProjectCard/>
-                        <ProjectCard/>
-                        <ProjectCard/>
+                        {
+                            ProjectList.map((project,index)=>{
+                                    return <ProjectCard project={project} index={index}/>
+                                }
+                            )
+                        }
                     </div>
                 </div>
 
@@ -89,12 +107,12 @@ function about() {
                         </p>
 
                         <div className="btn flex mt-6 mb-28">
-                            <button className='flex px-2 py-2 border items-center rounded-lg mr-2 text-red-700 border-red-700 hover:bg-red-700 hover:text-white'>
-                                <BiMailSend className='mr-1'/> Mail </button>
-                            <button className='flex px-2 py-2 border items-center rounded-lg mr-2 text-blue-600 border-blue-600  hover:bg-blue-600 hover:text-white'>
-                                <FaLinkedinIn className='mr-1'/> LinkedIn</button>
-                            <button className='flex px-2 py-2 border items-center rounded-lg mr-2 text-green-500 border-green-500  hover:bg-green-500 hover:text-white'>
-                                <CgWebsite className='mr-1'/> Contact Page</button>
+                            <Link href="mailto:surajkumar71799@gmail.com" className='flex px-2 py-2 border items-center rounded-lg mr-2 text-red-700 border-red-700 hover:bg-red-700 hover:text-white'>
+                                <BiMailSend className='mr-1'/> Mail </Link>
+                            <Link href='https://www.linkedin.com/in/kumar-suraj-sk/' target="_blank" className='flex px-2 py-2 border items-center rounded-lg mr-2 text-blue-600 border-blue-600  hover:bg-blue-600 hover:text-white'>
+                                <FaLinkedinIn className='mr-1'/> LinkedIn</Link>
+                            <Link href='/contact' className='flex px-2 py-2 border items-center rounded-lg mr-2 text-green-500 border-green-500  hover:bg-green-500 hover:text-white'>
+                                <CgWebsite className='mr-1'/> Contact Page</Link>
                         </div>
                     </div>
                 </div>

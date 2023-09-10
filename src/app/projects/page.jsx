@@ -4,6 +4,21 @@ import ProjectCard from './projectCard'
 import Footer from '../components/Footer';
 
 function page() {
+    
+    const ProjectList =[
+        {
+            name : "e-Commarce VegMarket Store",
+            date : [2,"Sep",2023],
+            tags : ['next.js', 'react.js', 'node.js','express.js', 'mongodb']
+        },
+
+        {
+            name : "Hostel Management System",
+            date : [10,"Sep",2022],
+            tags : ['Bootstrap', 'HTML', 'Javascript','Flask', 'Python', 'MySql']
+        },
+    ]
+
     return (
         <>
             <div className="w-9/12 m-auto">
@@ -18,16 +33,14 @@ function page() {
 
                     <div className="pageImgAndAbout ">
                         <div className="mainImage grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 m-auto">
-                            <ProjectCard/>
-                            <ProjectCard/>
-                            <ProjectCard/>
-                            <ProjectCard/>
-                            <ProjectCard/>
-                            <ProjectCard/>
-                            <ProjectCard/>
-                            <ProjectCard/>
-                            <ProjectCard/>
-                            <ProjectCard/>
+
+                            {
+                                ProjectList.map((project,index)=>{
+                                        return <ProjectCard project={project} index={index}/>
+                                    }
+                                )
+                            }
+                            
                         </div>
                     </div>
                 </div>

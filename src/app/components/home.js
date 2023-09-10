@@ -1,9 +1,25 @@
 import { FaLinkedin, FaGithub, FaDiscord , FaFacebook , FaCode} from "react-icons/fa";
 import Link from 'next/link';
 import Projects from "./Projects";
+import ProjectCard from "../projects/projectCard";
 import Blogs from "./Blogs";
 
 function index() {
+
+    const ProjectList =[
+        {
+            name : "e-Commarce VegMarket Store",
+            date : [2,"Sep",2023],
+            tags : ['next.js', 'react.js', 'node.js','express.js', 'mongodb']
+        },
+
+        {
+            name : "Hostel Management System",
+            date : [10,"Sep",2022],
+            tags : ['Bootstrap', 'HTML', 'Javascript','Flask', 'Python', 'MySql']
+        },
+    ]
+
     return (
         <>
             <div>
@@ -43,9 +59,13 @@ function index() {
                     <div className="latestProject w-6/12 pl-3">
                         <h3 className="text-2xl">Latest Project</h3>
                         <div className="mx-2 mt-4 h-0.5 rounded-full bg-gray-300"></div>
-                        <div className="mx-2">
-                            <Projects/>
-                            <Projects/>
+                        <div className="mx-2 mb-5">
+                        {
+                            ProjectList.map((project,index)=>{
+                                    return <ProjectCard project={project} index={index}/>
+                                }
+                            )
+                        }
                         </div>
                     </div>
                 </div>
