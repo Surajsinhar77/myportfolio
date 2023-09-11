@@ -38,6 +38,11 @@ function about() {
             date : [10,"Sep",2022],
             tags : ['Bootstrap', 'HTML', 'Javascript','Flask', 'Python', 'MySql']
         },
+        {
+            name : "StackOver Clone",
+            date : [10,"Sep",2022],
+            tags : ['react.js', 'node.js','express.js', 'mongodb','Redux']
+        },
     ]
     
     return (

@@ -1,12 +1,12 @@
 import Link from "next/link"
 import {FaArrowRight} from "react-icons/fa";
 
-function Blogs(){
+function Blogs({element, index}){
     return (
         <div className="mt-5">
             <div>
                 <h2 className="text-2xl"> 
-                    <Link href="/"> Converting a Laravel Inertia App from Mix to Vite </Link> 
+                    <Link href="/blogs/[slug]/" as={`/blogs/${index}/`} className="capitalize"> {element.title} </Link> 
                 </h2>
             </div>
             <div className="tags mt-5">
@@ -17,7 +17,7 @@ function Blogs(){
             </div>
             <div className="contentPreview mt-4">
                 <p>
-                    I recently converted my Inertia app from Laravel Mix to using Vite. In this post I&apos;ll talk about how it went&rsquo; as well as some of the gotchas.
+                    {element.body}
                 </p>
             </div>
             <div className="BlogBtn mt-5 text-blue-400 font-light">

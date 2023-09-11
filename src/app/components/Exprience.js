@@ -31,6 +31,19 @@ function Exprience() {
                     </ul>
                 </div>
             </div>
+
+            <div className="bg-gray-100 p-4 mt-5">
+                <div className="latestAcadmey mt-2">
+                    <h1 className="SchoolName font-normal">
+                        Dabotics India Pvt. Ltd.
+                    </h1>
+                    <span className="text-gray-500">Web Development intern | Full Stack Web Development | 2022(June) - 2022(Aug)</span>
+                    <ul className="list-disc p-4">
+                        <li><p>Completed relevant coursework in data structures and algorithms, software engineering, operating systems, and database systems</p></li>
+                        <li><p>Volunteered juniors to Up-skill in programming and Web Development</p></li>
+                    </ul>
+                </div>
+            </div>
         </>
     )
 }
