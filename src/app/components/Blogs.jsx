@@ -6,7 +6,7 @@ function Blogs({element, index}){
         <div className="mt-5">
             <div>
                 <h2 className="text-2xl"> 
-                    <Link href="/blogs/[slug]/" as={`/blogs/${index}/`} className="capitalize"> {element.title} </Link> 
+                    <Link href="/blogs/[slug]/" as={`/blogs/${index}/`} className="capitalize hover:underline  hover:underline-offset-2"> {element.title} </Link> 
                 </h2>
             </div>
             <div className="tags mt-5">
