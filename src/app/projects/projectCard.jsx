@@ -42,8 +42,8 @@ function projectCard({project,index}) {
           <h2 className="text-center">{project.name}</h2>
           <div className="useTech p-3 border-t-2 mt-5">
             {
-              project.tags.map((tags)=>{
-                return <button className="py-1 px-1 text-sm border rounded-md border-blue-400 mr-3 mb-3 text-blue-400">{tags}</button>
+              project.tags.map((tags,index)=>{
+                return <button key={index} className="py-1 px-1 text-sm border rounded-md border-blue-400 mr-3 mb-3 text-blue-400">{tags}</button>
               })
             }
           </div>

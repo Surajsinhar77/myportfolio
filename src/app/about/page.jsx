@@ -43,6 +43,11 @@ function about() {
             date : [10,"Sep",2022],
             tags : ['react.js', 'node.js','express.js', 'mongodb','Redux']
         },
+        {
+        	name : "My Portfolio",
+        	date : [10, 'Aug', 2023],
+        	tags : ['Next.js', 'node.js', 'express.js', 'mongodb', 'react.js']
+        },
     ]
     
     return (
@@ -95,7 +100,7 @@ function about() {
                     <div className="mainImage grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 m-auto">
                         {
                             ProjectList.map((project,index)=>{
-                                    return <ProjectCard project={project} index={index}/>
+                                    return <ProjectCard keys={index} project={project} index={index}/>
                                 }
                             )
                         }

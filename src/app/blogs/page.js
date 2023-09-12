@@ -116,7 +116,7 @@ export default function blog() {
                     <div className="mx-2">
                         {
                             BlogsContent.map((blog,index)=>{
-                                return <Blogs element={blog} index={index} />
+                                return <Blogs key={index} element={blog} index={index} />
                             })
                         }
                     </div>

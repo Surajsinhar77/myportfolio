@@ -61,7 +61,7 @@ function page() {
                                 <h1 className="uppercase">Suggestion</h1>
                                 {
                                     BlogsContent.map((element,index)=>{
-                                        return <Blogs element={element} index={index}/>
+                                        return <Blogs key={index} element={element} index={index}/>
                                     })
                                 }
                             </div>

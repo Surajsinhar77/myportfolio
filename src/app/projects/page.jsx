@@ -41,7 +41,7 @@ function page() {
 
                             {
                                 ProjectList.map((project,index)=>{
-                                        return <ProjectCard project={project} index={index}/>
+                                        return <ProjectCard key={index} project={project} index={index}/>
                                     }
                                 )
                             }

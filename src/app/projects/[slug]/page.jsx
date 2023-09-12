@@ -59,7 +59,7 @@ function Project() {
                             <span>TAGS : </span>
                             {
                                 ProjectList[params.slug].tags.map((tags,index)=>{
-                                    return <button keys={index} className="py-1 px-1 text-sm border rounded-md border-blue-400 mr-3 mb-3 text-blue-400">{tags}</button>
+                                    return <button key={index} className="py-1 px-1 text-sm border rounded-md border-blue-400 mr-3 mb-3 text-blue-400">{tags}</button>
                                 })
                             }
                         </div>
