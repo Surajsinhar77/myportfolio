@@ -1,4 +1,3 @@
-// src/VideoPlayer.jsx
 "use client"
 import React, { useRef } from 'react';
 import { Paper } from '@mui/material';
