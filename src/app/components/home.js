@@ -92,7 +92,7 @@ function index() {
                         <div className="mx-2">
                             {
                                 BlogsContent.map((element,index)=>{
-                                    return <Blogs key={index} element={element} index={index}/>
+                                    return <Blogs key={element.id} element={element} index={index}/>
                                 })
                             }
                         </div>
