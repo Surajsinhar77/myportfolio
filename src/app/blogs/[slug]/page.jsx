@@ -44,7 +44,7 @@ function page() {
                                 </div>
                                 <div className="forBlogImage ">
                                     <span className="">
-                                        <h1 className="text-2xl my-3 ml-2 font-normal capitalize text-blue-400 underline underline-offset-1">By : Suraj Kumar  <span> <Date></Date> </span></h1>
+                                        <h1 className="text-2xl my-3 ml-2 font-normal capitalize text-blue-400 underline underline-offset-1">By : Suraj Kumar  <span> 1- Sep - 2023 </span></h1>
                                     </span>
                                     <Image src='/Images/peas1.jpeg' width="720" height="480" alt="Image of blog Related" className="border w-full h-96" />
                                 </div>
