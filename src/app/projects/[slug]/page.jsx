@@ -32,27 +32,27 @@ function Project() {
                         <Image src="/Images/homePage.png" priority={false} width="1920" height="420" alt='Project Image' className='w-full '></Image>
 
                         <div className="otherImageOption border border-blue-700 w-full h-32 flex mt-7">
-                        <div className="imagesOfProject w-28 h-24 border border-red-700 m-4">
-                            <Image src="/Images/homePage.png" width="1920" height="420" alt='Project Image' className='w-full '></Image>
-                        </div>
-                        <div className="imagesOfProject w-28 h-24 border border-red-700 m-4">
-                            <Image src="/Images/homePage.png" width="1920" height="420" alt='Project Image' className='w-full '></Image>
-                        </div>
+                            <div className="imagesOfProject w-28 h-24 border border-red-700 m-4">
+                                <Image src="/Images/homePage.png" width="1920" height="420" alt='Project Image' className='w-full '></Image>
+                            </div>
+                            <div className="imagesOfProject w-28 h-24 border border-red-700 m-4">
+                                <Image src="/Images/homePage.png" width="1920" height="420" alt='Project Image' className='w-full '></Image>
+                            </div>
 
-                        <div className="imagesOfProject w-28 h-24 border border-red-700 m-4">
-                            <Image src="/Images/homePage.png" width="1920" height="420" alt='Project Image' className='w-full '></Image>
-                        </div>
+                            <div className="imagesOfProject w-28 h-24 border border-red-700 m-4">
+                                <Image src="/Images/homePage.png" width="1920" height="420" alt='Project Image' className='w-full '></Image>
+                            </div>
 
-                        <div className="imagesOfProject w-28 h-24 border border-red-700 m-4">
-                            <Image src="/Images/homePage.png" width="1920" height="420" alt='Project Image' className='w-full '></Image>
-                        </div>
+                            <div className="imagesOfProject w-28 h-24 border border-red-700 m-4">
+                                <Image src="/Images/homePage.png" width="1920" height="420" alt='Project Image' className='w-full '></Image>
+                            </div>
 
-                        <div className="imagesOfProject w-28 h-24 border border-red-700 m-4">
-                            <Image src="/Images/homePage.png" width="1920" height="420" alt='Project Image' className='w-full '></Image>
+                            <div className="imagesOfProject w-28 h-24 border border-red-700 m-4">
+                                <Image src="/Images/homePage.png" width="1920" height="420" alt='Project Image' className='w-full '></Image>
+                            </div>
                         </div>
                     </div>
 
-                    </div>
                     <div className="detailInfo p-5">
                         <h1 className='mb-5'>NAME : {ProjectList[params.slug].name} </h1>
                         <div className="tags">
