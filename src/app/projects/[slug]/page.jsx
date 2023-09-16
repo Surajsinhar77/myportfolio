@@ -4,6 +4,7 @@ import Navbar from '../../components/navbar';
 import Image from 'next/image';
 import Footer from '@/app/components/Footer';
 import VideoPlayer from '@/app/components/VideoPlayer';
+import './style.css';
 
 function Project() {
     const params = useParams();
@@ -24,34 +25,57 @@ function Project() {
     console.log(ProjectList[params.slug].tags)
     return (
         <>
-            <div className="w-9/12 m-auto">
+            <div className="m-auto w-9/12">
                 <Navbar/>
                 <h1 className='text-3xl my-8 text-center uppercase'>{ProjectList[params.slug].name}</h1>
                 <div className='mainContainer-project border h-full flex'>
-                    <div className="mainImage p-3 border">
+                    <div className="mainImage p-3 border w-4/5">
                         <Image src="/Images/homePage.png" priority={false} width="1920" height="420" alt='Project Image' className='w-full '></Image>
 
-                        <div className="otherImageOption border border-blue-700 w-full h-32 flex mt-7">
-                        <div className="imagesOfProject w-28 h-24 border border-red-700 m-4">
-                            <Image src="/Images/homePage.png" width="1920" height="420" alt='Project Image' className='w-full '></Image>
+                        <div id='otherImageOption' className="otherImageOption border border-blue-700 w-full h-32 mt-7 overflow-auto whitespace-nowrap">
+                            <div className="imagesOfProject w-28 h-24 border border-red-700 m-4 inline-block">
+                                <Image src="/Images/homePage.png" width="1920" height="420" alt='Project Image' className='w-full '></Image>
+                            </div>
+                            <div className="imagesOfProject w-28 h-24 border border-red-700 m-4 inline-block">
+                                <Image src="/Images/homePage.png" width="1920" height="420" alt='Project Image' className='w-full '></Image>
+                            </div>
+                            <div className="imagesOfProject w-28 h-24 border border-red-700 m-4 inline-block">
+                                <Image src="/Images/homePage.png" width="1920" height="420" alt='Project Image' className='w-full '></Image>
+                            </div>
+                            <div className="imagesOfProject w-28 h-24 border border-red-700 m-4 inline-block">
+                                <Image src="/Images/homePage.png" width="1920" height="420" alt='Project Image' className='w-full '></Image>
+                            </div>
+                            <div className="imagesOfProject w-28 h-24 border border-red-700 m-4 inline-block">
+                                <Image src="/Images/homePage.png" width="1920" height="420" alt='Project Image' className='w-full '></Image>
+                            </div>
+                            <div className="imagesOfProject w-28 h-24 border border-red-700 m-4 inline-block">
+                                <Image src="/Images/homePage.png" width="1920" height="420" alt='Project Image' className='w-full '></Image>
+                            </div>
+                            <div className="imagesOfProject w-28 h-24 border border-red-700 m-4 inline-block">
+                                <Image src="/Images/homePage.png" width="1920" height="420" alt='Project Image' className='w-full '></Image>
+                            </div>
+                            <div className="imagesOfProject w-28 h-24 border border-red-700 m-4 inline-block">
+                                <Image src="/Images/homePage.png" width="1920" height="420" alt='Project Image' className='w-full '></Image>
+                            </div>
+                            <div className="imagesOfProject w-28 h-24 border border-red-700 m-4 inline-block">
+                                <Image src="/Images/homePage.png" width="1920" height="420" alt='Project Image' className='w-full '></Image>
+                            </div>
+                            <div className="imagesOfProject w-28 h-24 border border-red-700 m-4 inline-block">
+                                <Image src="/Images/homePage.png" width="1920" height="420" alt='Project Image' className='w-full '></Image>
+                            </div>
+                            <div className="imagesOfProject w-28 h-24 border border-red-700 m-4 inline-block">
+                                <Image src="/Images/homePage.png" width="1920" height="420" alt='Project Image' className='w-full '></Image>
+                            </div>
+                            <div className="imagesOfProject w-28 h-24 border border-red-700 m-4 inline-block">
+                                <Image src="/Images/homePage.png" width="1920" height="420" alt='Project Image' className='w-full '></Image>
+                            </div>
+                            <div className="imagesOfProject w-28 h-24 border border-red-700 m-4 inline-block">
+                                <Image src="/Images/homePage.png" width="1920" height="420" alt='Project Image' className='w-full '></Image>
+                            </div>
+                            <div className="imagesOfProject w-28 h-24 border border-red-700 m-4 inline-block">
+                                <Image src="/Images/homePage.png" width="1920" height="420" alt='Project Image' className='w-full '></Image>
+                            </div>
                         </div>
-                        <div className="imagesOfProject w-28 h-24 border border-red-700 m-4">
-                            <Image src="/Images/homePage.png" width="1920" height="420" alt='Project Image' className='w-full '></Image>
-                        </div>
-
-                        <div className="imagesOfProject w-28 h-24 border border-red-700 m-4">
-                            <Image src="/Images/homePage.png" width="1920" height="420" alt='Project Image' className='w-full '></Image>
-                        </div>
-
-                        <div className="imagesOfProject w-28 h-24 border border-red-700 m-4">
-                            <Image src="/Images/homePage.png" width="1920" height="420" alt='Project Image' className='w-full '></Image>
-                        </div>
-
-                        <div className="imagesOfProject w-28 h-24 border border-red-700 m-4">
-                            <Image src="/Images/homePage.png" width="1920" height="420" alt='Project Image' className='w-full '></Image>
-                        </div>
-                    </div>
-
                     </div>
                     <div className="detailInfo p-5">
                         <h1 className='mb-5'>NAME : {ProjectList[params.slug].name} </h1>
