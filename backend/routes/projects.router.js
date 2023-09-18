@@ -1,5 +1,5 @@
-
+const projectController = require('../controller/projects.controller');
 
 module.exports = (app) =>{
-    app.get('/getprojects', );
+    app.get('/insertprojects', projectController.insertProjectDetails);
 }

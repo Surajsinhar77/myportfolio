@@ -1,5 +1,9 @@
 const projectModel = require('../model/projects.model');
 
+const getProjects = async(req, res)=>{
+    //write code here
+}
+
 const insertProjectDetails = async(req, res)=>{
     // today you have to do this
     const {name,startDate, endDate, mainPic, highLight, tags, description, projectVideo} = req.body;
@@ -34,4 +38,5 @@ const deleteProject = async(req, res)=>{
 
 module.exports = {
     insertProjectDetails,
+    deleteProject,
 }
