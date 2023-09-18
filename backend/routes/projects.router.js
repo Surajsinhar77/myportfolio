@@ -1,1 +1,5 @@
-const projectModel = require('../model/projects.model');
+
+
+module.exports = (app) =>{
+    app.get('/getprojects', );
+}
