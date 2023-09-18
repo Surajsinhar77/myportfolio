@@ -2,6 +2,24 @@ const projectModel = require('../model/projects.model');
 
 const getProjects = async(req, res)=>{
     //write code here
+    try{
+        const allProjectData = await projectModel.find({});
+        return res.json({data :allProjectData});
+    }catch(err){
+        console.error(err);
+        return res.json({errorMsg : err});
+    }
+}
+
+const getProject = async(req, res)=>{
+    try{
+        const id = req.params;
+        const project = await projectModel.find(id);
+        return res.status(200).json({data:project});
+    }catch(err){
+        console.error(err);
+        return res.json({errorMsg: err});
+    }
 }
 
 const insertProjectDetails = async(req, res)=>{
@@ -33,10 +51,19 @@ const insertProjectDetails = async(req, res)=>{
 }
 
 const deleteProject = async(req, res)=>{
-    //write code from here 
+    const id = req.params._id; 
+    try{
+        const check = await projectModel.deleteOne({_id : id}); 
+        return res.status(200).json({msg: check});
+    }catch(err){
+        console.error(err);
+        return res.json({msg: err});
+    }
 }
 
 module.exports = {
     insertProjectDetails,
     deleteProject,
+    getProjects,
+    getProject
 }
