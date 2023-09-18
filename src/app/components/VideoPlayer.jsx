@@ -1,8 +1,8 @@
 "use client"
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import { Paper } from '@mui/material';
 
-const VideoPlayer = () => {
+export default function VideoPlayer(){
     const videoRef = useRef(null);
 
     const handlePlay = () => {
@@ -39,5 +39,3 @@ const VideoPlayer = () => {
         </Paper>
     );
 };
-
-export default VideoPlayer;

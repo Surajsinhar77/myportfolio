@@ -1,6 +1,6 @@
 
 
-function Education() {
+export default function Education() {
     return (
         <>
             <div className=" p-2 ">
@@ -43,5 +43,3 @@ function Education() {
         </>
     )
 }
-
-export default Education

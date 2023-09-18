@@ -1,6 +1,5 @@
 
-
-function Exprience() {
+export default function Exprience() {
     return (
         <>
             <div className="headerForEd font-bold">
@@ -47,5 +46,3 @@ function Exprience() {
         </>
     )
 }
-
-export default Exprience

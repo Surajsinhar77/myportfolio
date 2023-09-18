@@ -1,10 +1,8 @@
 
-function Achievements() {
+export default function Achievements() {
     return (
         <>
             Achievements
         </>
     )
 }
-
-export default Achievements

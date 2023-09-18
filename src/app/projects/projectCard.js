@@ -3,7 +3,7 @@ import {SiV} from 'react-icons/si';
 import Image from "next/image"
 import Link from "next/link";
 
-function projectCard({project,index}) {
+export default function projectCard({project,index}) {
   
   return (
       <>
@@ -51,4 +51,3 @@ function projectCard({project,index}) {
       </>
   )
 }
-export default projectCard

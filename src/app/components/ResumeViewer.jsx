@@ -1,6 +1,5 @@
-import React from 'react'
 
-function ResumeViewer() {
+export default function ResumeViewer() {
     return (
         <>
             <div className="resumeContainer ">
@@ -12,5 +11,3 @@ function ResumeViewer() {
         </>
     )
 }
-
-export default ResumeViewer

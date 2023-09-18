@@ -3,7 +3,7 @@ import Navbar from '../components/navbar';
 import ProjectCard from './projectCard'
 import Footer from '../components/Footer';
 
-function page() {
+export default function page() {
     
     const ProjectList =[
         {
@@ -54,5 +54,3 @@ function page() {
         </>
     )
 }
-
-export default page

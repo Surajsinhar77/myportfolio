@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-function Footer() {
+export default function Footer() {
     return (
         <>
             <div className="footerContainer">
@@ -14,5 +14,3 @@ function Footer() {
         </>
     )
 }
-
-export default Footer

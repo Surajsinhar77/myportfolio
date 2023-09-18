@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-function Projects() {
+export default function Projects() {
     return (
         <>
             <div className="Projects mt-7 w-12/12">
@@ -23,5 +23,3 @@ function Projects() {
         </>
     )
 }
-
-export default Projects

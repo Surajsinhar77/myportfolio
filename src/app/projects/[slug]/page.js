@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Footer from '@/app/components/Footer';
 import VideoPlayer from '@/app/components/VideoPlayer';
 
-function Project() {
+export default function Project() {
     const params = useParams();
 
     const ProjectList =[
@@ -87,5 +87,3 @@ function Project() {
         </>
     )
 }
-
-export default Project

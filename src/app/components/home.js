@@ -1,10 +1,9 @@
-import { FaLinkedin, FaGithub, FaDiscord , FaFacebook , FaCode} from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaDiscord , FaCode} from "react-icons/fa";
 import Link from 'next/link';
-import Projects from "./Projects";
 import ProjectCard from "../projects/projectCard";
 import Blogs from "./Blogs";
 
-function index() {
+export default function index() {
 
     const ProjectList =[
         {
@@ -114,5 +113,3 @@ function index() {
         </>
     )
 }
-
-export default index;

@@ -14,7 +14,7 @@ import {CgWebsite} from 'react-icons/cg';
 import Link from 'next/link';
 
 
-function about() {
+export default function about() {
     const [switching, setSwitchingData] =useState(1);
     const subRouterComponents ={
         1:dynamic(()=>import('../components/Education')),
@@ -132,5 +132,3 @@ function about() {
         </>
     )
 }
-
-export default about;

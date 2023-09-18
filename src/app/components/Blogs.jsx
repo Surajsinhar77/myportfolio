@@ -1,7 +1,7 @@
 import Link from "next/link"
 import {FaArrowRight} from "react-icons/fa";
 
-function Blogs({element, index}){
+export default function Blogs({element, index}){
     return (
         <div className="mt-5">
             <div>
@@ -29,5 +29,3 @@ function Blogs({element, index}){
         </div>
     )
 }
-
-export default Blogs

@@ -5,9 +5,8 @@ import Footer from "@/app/components/Footer";
 import Image from "next/image";
 import Blogs from "@/app/components/Blogs";
 
-function page() {
+export default function page() {
     const params  = useParams();
-
 
     const BlogsContent = [
         {
@@ -102,5 +101,3 @@ function page() {
         </>
     )
 }
-
-export default page

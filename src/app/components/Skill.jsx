@@ -3,9 +3,9 @@ import { SiNextdotjs,SiTailwindcss,SiRedux,SiExpress,SiMongodb,SiMysql,SiFirebas
 import {BiLogoFlask} from "react-icons/bi";
 import {BsGit} from 'react-icons/bs';
 import { SiVisualstudiocode } from "react-icons/si";
-import Image from 'next/image';
+// import Image from 'next/image';
 
-function Skill() {
+export default function Skill() {
 
     const imageLoader = ({ src, width, quality }) => {
         return `${src}?w=${width}&q=${quality || 75}`
@@ -179,4 +179,3 @@ function Skill() {
         </>
     )
 }
-export default Skill

@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 
-function navbar() {
+export default function navbar() {
     return (
         <>
             <header className="flex my-20 m-auto w-full">
@@ -32,5 +32,3 @@ function navbar() {
         </>
     )
 }
-
-export default navbar

@@ -1,7 +1,7 @@
 import Navbar from "../components/navbar"
 import Footer from "../components/Footer"
 
-function Contact() {
+export default function Contact() {
     return (
         <>
             <div className="contactContainer w-9/12 m-auto">
@@ -46,5 +46,3 @@ function Contact() {
         </>
     )
 }
-
-export default Contact
