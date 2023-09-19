@@ -65,5 +65,5 @@ module.exports = {
     insertProjectDetails,
     deleteProject,
     getProjects,
-    getProject
+    getProject,
 }
