@@ -8,7 +8,7 @@ export default function dashboard(){
     return(
         <>  
             <AppContext.Provider value={{userName, setUserName}}>
-                <LoginPage></LoginPage>
+                <LoginPage/>
             </AppContext.Provider>
         </>
     )
