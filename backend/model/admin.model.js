@@ -25,7 +25,7 @@ const adminsSchema = new mongoose.Schema({
 		required:true,
 	},
 	profilePic:{
-		typr:String,
+		type:String,
 		required:true,
 	},
 })
