@@ -2,7 +2,7 @@ const adminModel = require('../model/admin.model');
 const bcrypt = require('bcrypt');
 
 const adminRegistration =async(req, res)=>{
-
+    // This way we can use hash fucntion of the bcrypt
     async function hashPassword(myPlaintextPassword, saltRounds) {
         return new Promise((resolve, reject) => {
             bcrypt.hash(myPlaintextPassword, saltRounds, (err, hash) => {
@@ -16,25 +16,25 @@ const adminRegistration =async(req, res)=>{
     }
 
     const {name, email, password, role, phoneno, profilePic} = req.body;
-    
+
     try{
-        const check = await adminModel.find({email:email});
+        const check = await adminModel.findOne({email:email});
         if(check){
-            return res.status(403).json({msg: "User Already exist here ",userExist:true});
+            return res.status(401).json({msg: "User Already exist here ",userExist:true});
         } 
         const hashPass = await hashPassword(password, 10);
 
         const adminInfo = new adminModel({
             name,
             email,
-            hashPass,
+            password : hashPass,
             role,
             phoneno,
             profilePic
         })
 
         const result = await adminInfo.save();
-        return res.status(400).json({data : result, userExist:true});
+        return res.status(200).json({msg:"User is sucessfull register", data : result, userExist:true});
     }catch(err){
         console.error(err);
         return res.status(400).json({msg:"This is the Error ",err});
@@ -47,11 +47,20 @@ const adminLogin = async(req, res) =>{
     try{
         const check = await adminModel.findOne({email:email});
         if(!check){
-            return res.status(409).json({msg:"User doesn't Exist", userExist:false});
+            return res.status(409).json({msg:"User not Found ", userExist:false});
         }
         
-    }catch(err){
+        const passwordCompare = await bcrypt.compare(password, check.password);
 
+        console.log(passwordCompare);
+
+        if(passwordCompare){
+            return res.json({msg: "User Successfull login ", check});
+        }else{
+            return res.status(401).json({msg:"Incorrect Password"});
+        }
+    }catch(err){
+        return res.status(500).json({msf: "The Error is ",err});
     }
 }
 

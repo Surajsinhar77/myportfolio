@@ -1,6 +1,7 @@
 const express = require('express');
 const connection = require('./db/db');
 const app = express();
+const path = require('path');
 app.use(express.json());
 
 //Database Connectivity Function 
@@ -12,7 +13,8 @@ app.get('/test', (req, res)=>{
 })
 
 app.listen(7000 ,()=>{
-    console.log("Server run on :http://localhost:",7000);
+    console.log("Server run on :http://localhost:"+7000);
 })
 
 require(path.join(__dirname, "./routes/projects.router"))(app);
+require(path.join(__dirname,"./routes/admin.router"))(app);

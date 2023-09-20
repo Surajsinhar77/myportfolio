@@ -13,7 +13,6 @@ const adminsSchema = new mongoose.Schema({
 	password:{
 		type:String,
 		required:true,
-		lowercase:true,
 	},
 	role:{
 		type:String,
@@ -34,4 +33,4 @@ const  adminModelFunction = ()=>{
 	const adminModel = mongoose.model('admins',adminsSchema);
 	return adminModel;
 }
-export default adminModelFunction();
+module.exports =  adminModelFunction();

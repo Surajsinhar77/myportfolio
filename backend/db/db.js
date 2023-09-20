@@ -7,5 +7,4 @@ const connection = ()=>{
         console.log("There is the error while connecting to Database :",err);
     })
 }
-
-export default connection;
+module.exports = connection;

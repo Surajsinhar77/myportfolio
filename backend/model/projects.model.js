@@ -52,4 +52,4 @@ const Model = ()=>{
     return projectModel = mongoose.model('projects',projectSchema);
 }
 
-export default Model();
+module.exports = Model();
