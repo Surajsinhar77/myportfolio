@@ -2,7 +2,17 @@ import Image from "next/image";
 import { useState , useEffect} from "react";
 // import Link from "next/link";
 import api from '../../API/axiosApi';
-import axios, { Axios } from "axios";
+import axios from "axios";
+
+export async function getStaticProps() {
+    const response = await api.post('/admin/login',);
+    const users = response.data;
+        return {
+        props: {
+            users,
+        },
+        };
+    }
 
 export default function(){
 
@@ -13,7 +23,7 @@ export default function(){
     const loginAdmin = (email, password) =>{
         console.log("here i came ", email, password)
         
-        axios.request('http://localhost:7000/test').then(Response=>{
+        axios.post('http://localhost:7000/test').then(Response=>{
             console.log(Response);
         }).catch(err=>{
             console.log(err);
