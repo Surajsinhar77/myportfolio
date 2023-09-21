@@ -1,18 +1,6 @@
 import Image from "next/image";
 import { useState , useEffect} from "react";
-// import Link from "next/link";
-import api from '../../API/axiosApi';
-import axios from "axios";
 
-export async function getStaticProps() {
-    const response = await api.post('/admin/login',);
-    const users = response.data;
-        return {
-        props: {
-            users,
-        },
-        };
-    }
 
 export default function(){
 
@@ -20,26 +8,29 @@ export default function(){
     const [password, setPassword] = useState("");
     const [remenber, setRemember] = useState(false);
 
-    const loginAdmin = (email, password) =>{
-        console.log("here i came ", email, password)
-        
-        axios.post('http://localhost:7000/test').then(Response=>{
-            console.log(Response);
+
+    async function onSubmit(event) {
+        event.preventDefault()
+    
+        // const formData = new FormData(event.target)
+        fetch('http://localhost:7000/test').then(response=>{
+            console.log(response);
         }).catch(err=>{
             console.log(err);
         })
-        // api.post('/admin/login',{email:email, password:password})
-        // .then((Response)=>{
-        //     console.log(Response);
-        // }).catch((err)=>{
-        //     console.log(err);
-        // })
+        
     }
 
-    const handelInput = (e) =>{
-        e.preventDefault();
-        loginAdmin(email, password);
-    }
+    // const handelInput = async(e) =>{
+    //     e.preventDefault();
+    //     const formData = new FormData(e.target)
+    //     const response = await fetch('http://localhost:7000/test', {
+    //     method: 'GET',
+    //     // body: {email:email,password:password},
+    //     })
+    //     const data = await response.json()
+    //     console.log(data);
+    // }
 
 
     return(
@@ -59,7 +50,7 @@ export default function(){
                         <p className="text-sm font-light">Please sign-in to your account and start the adventure</p>
                     </div>
                     <div>
-                        <form className="h-64 flex flex-col justify-between" onSubmit={handelInput}>
+                        <form className="h-64 flex flex-col justify-between" onSubmit={onSubmit}>
                             <div className="row flex flex-col">
                                 <label className="text-xs" htmlFor="">Email</label>
                                 <input className="h-10 rounded pl-3 mt-1" onChange={(e)=>setEmail(e.target.value)} placeholder="admin@myportfolio.com" type="email" required/>
