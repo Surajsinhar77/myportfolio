@@ -2,6 +2,7 @@ const express = require('express');
 const connection = require('./db/db');
 const app = express();
 const path = require('path');
+const cors = require('cors');
 app.use(express.json());
 
 //Database Connectivity Function 

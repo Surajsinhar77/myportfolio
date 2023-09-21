@@ -14,9 +14,7 @@ const adminRegistration =async(req, res)=>{
             });
         });
     }
-
     const {name, email, password, role, phoneno, profilePic} = req.body;
-
     try{
         const check = await adminModel.findOne({email:email});
         if(check){
@@ -44,6 +42,7 @@ const adminRegistration =async(req, res)=>{
 const adminLogin = async(req, res) =>{
 	// const 
     const {email, password} = req.body;
+    console.log(email, password) // Have to remove this 
     try{
         const check = await adminModel.findOne({email:email});
         if(!check){
@@ -51,9 +50,6 @@ const adminLogin = async(req, res) =>{
         }
         
         const passwordCompare = await bcrypt.compare(password, check.password);
-
-        console.log(passwordCompare);
-
         if(passwordCompare){
             return res.json({msg: "User Successfull login ", check});
         }else{
