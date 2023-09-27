@@ -9,17 +9,17 @@ export default function(){
     const [remenber, setRemember] = useState(false);
 
 
-    async function onSubmit(event) {
-        event.preventDefault()
+    // async function onSubmit(event) {
+    //     event.preventDefault()
     
-        // const formData = new FormData(event.target)
-        fetch('http://localhost:7000/test').then(response=>{
-            console.log(response);
-        }).catch(err=>{
-            console.log(err);
-        })
+    //     // const formData = new FormData(event.target)
+    //     fetch('http://localhost:7000/test').then(response=>{
+    //         console.log(response);
+    //     }).catch(err=>{
+    //         console.log(err);
+    //     })
         
-    }
+    // }
 
     // const handelInput = async(e) =>{
     //     e.preventDefault();
