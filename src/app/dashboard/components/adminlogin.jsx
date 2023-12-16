@@ -50,7 +50,7 @@ export default function AdminalPage(){
                         <p className="text-sm font-light">Please sign-in to your account and start the adventure</p>
                     </div>
                     <div>
-                        <form className="h-64 flex flex-col justify-between" onSubmit={onSubmit}>
+                        <form className="h-64 flex flex-col justify-between">
                             <div className="row flex flex-col">
                                 <label className="text-xs" htmlFor="">Email</label>
                                 <input className="h-10 rounded pl-3 mt-1" onChange={(e)=>setEmail(e.target.value)} placeholder="admin@myportfolio.com" type="email" required/>
