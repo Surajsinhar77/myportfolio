@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useState , useEffect} from "react";
 
 
-export default function(){
+export default function AdminalPage(){
 
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");

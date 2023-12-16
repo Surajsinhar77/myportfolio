@@ -3,7 +3,7 @@ import LoginPage from './components/adminlogin';
 import { useContext, useState } from 'react';
 import AppContext from './components/AppContext';
 
-export default function dashboard(){
+export default function Dashboard(){
     const [userName, setUserName] = useState("default");
     return(
         <>  

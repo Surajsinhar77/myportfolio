@@ -62,7 +62,7 @@ export default function Index() {
         <>
             <div>
                 <div className="myAbout p-7 bg-blue-100 rounded">
-                    <h3 className="text-3xl mb-5">Hi&rsquo; I'm Suraj.</h3>
+                    <h3 className="text-3xl mb-5">Hi &rsquo; Im Suraj.</h3>
                     <p className="font-light text-xl tracking-wide leading-relaxed">
                         Student of BE CSE 4Yr at CHANDIGARH university. I am a computer science enthusiast. I have done Data Structure and Algorithms from Coding Ninjas and MERN STACK Development from Geeks Of Geeks live, Open to work on any development project which is related to my skill set.
                     </p>

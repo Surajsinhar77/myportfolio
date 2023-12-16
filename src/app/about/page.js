@@ -59,7 +59,7 @@ export default function About() {
                     <h1 className='mb-3 text-4xl text-center uppercase'>About me </h1>
                     <h5 className='text-xl mt-5 font-normal text-center'>Welcome to my portfolio!</h5>
                     <p className='text-lg mt-3 font-normal uppercase text-center'>
-                        In Short: I'm a passionate and experienced developer with a deep love for all tech things.
+                        In Short: Im a passionate and experienced developer with a deep love for all tech things.
                     </p>
                 </div>
 
@@ -112,8 +112,8 @@ export default function About() {
                     <div className="contactFromAbout">
                         <h3 className='mb-3 text-xl flex items-center font-medium'>< GrContact className='text-blue-600'/> &nbsp; Get in touch</h3>
                         <p className='text-lg font-light'>
-                            Sweet, that's it from my side! Now it's your turn to say hi. <br />
-                            I'm available for freelance projects. Let's work together to create something <br /> worth sharing.
+                            Sweet, thats it from my side! Now its your turn to say hi. <br />
+                            Im available for freelance projects. Lets work together to create something <br /> worth sharing.
                         </p>
 
                         <div className="btn flex mt-6 mb-28">
