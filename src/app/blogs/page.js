@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 
 // Blogs page
 
-export default function blog() {
+export default function Blog() {
     const BlogsContent = [
         {
             userId: 1,

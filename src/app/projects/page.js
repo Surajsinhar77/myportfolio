@@ -3,7 +3,7 @@ import Navbar from '../components/navbar';
 import ProjectCard from './projectCard'
 import Footer from '../components/Footer';
 
-export default function page() {
+export default function Page() {
     
     const ProjectList =[
         {

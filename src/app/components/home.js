@@ -3,7 +3,7 @@ import Link from 'next/link';
 import ProjectCard from "../projects/projectCard";
 import Blogs from "./Blogs";
 
-export default function index() {
+export default function Index() {
 
     const ProjectList =[
         {
