@@ -3,7 +3,7 @@ import {SiV} from 'react-icons/si';
 import Image from "next/image"
 import Link from "next/link";
 
-export default function projectCard({project,index}) {
+export default function ProjectCard({project,index}) {
   
   return (
       <>
